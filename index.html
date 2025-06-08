@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Braille Converter - BrailleConnect</title>
+    <meta name="description" content="Convert images with text to Braille characters with OCR technology">
+    <meta name="keywords" content="braille, converter, OCR, accessibility, text extraction">
+    <meta property="og:title" content="Image to Braille Converter">
+    <meta property="og:description" content="Convert images with text to Braille characters">
+    <meta name="twitter:title" content="Image to Braille Converter">
+    <meta name="twitter:description" content="Convert images with text to Braille characters">
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/LanguageSelector.js"></script>
+    <script type="text/babel" src="components/ImageUpload.js"></script>
+    <script type="text/babel" src="components/Results.js"></script>
+    <script type="text/babel" src="components/Instructions.js"></script>
+    <script type="text/babel" src="components/ErrorNotification.js"></script>
+    <script type="text/babel" src="utils/ocrService.js"></script>
+    <script type="text/babel" src="utils/brailleConverter.js"></script>
+    <script type="text/babel" src="utils/textToSpeech.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
