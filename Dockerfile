@@ -1,8 +1,9 @@
 FROM python:3.10-slim
 
+# Install tesseract with Hindi OCR support and required libraries
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
-    tesseract-ocr-hin \  # installs Hindi support
+    tesseract-ocr-hin \
     libglib2.0-0 \
     libsm6 \
     libxext6 \
